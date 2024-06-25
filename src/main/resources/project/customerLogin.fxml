@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #cf5c36;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Client.Controller.CustomerLoginController">
+   <children>
+      <TextField fx:id="userNameTextField" layoutX="513.0" layoutY="336.0" prefHeight="37.0" prefWidth="194.0" promptText="User Name" style="-fx-background-radius: 50; -fx-border-radius: 60;" styleClass="inputGroup" />
+      <Button fx:id="userNameButton" layoutX="567.0" layoutY="396.0" mnemonicParsing="false" onAction="#submitUserName" stylesheets="@LoginButton.css" text="Log In">
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="ripple" />
+         </styleClass></Button>
+      <AnchorPane prefHeight="600.0" prefWidth="330.0" style="-fx-background-color: #2d1e2f;">
+         <children>
+            <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="44.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@H.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="111.0" layoutY="518.0" text="All RIGHTS RESERVED" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="365.0" layoutY="109.0" text="Taste the World, at Your Fingertips." textFill="#f1ebff">
+         <font>
+            <Font name="Segoe Print" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="557.0" layoutY="300.0" text="Join Us Today!" textFill="#d1ccdc">
+         <font>
+            <Font name="Segoe Print" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginRestaurant" layoutX="554.0" layoutY="516.0" mnemonicParsing="false" onAction="#loginRestaurant" text="Login as Restaurant" textFill="#0017ff">
+         <effect>
+            <DropShadow>
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Glow level="1.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" elevation="71.42">
+                           <color>
+                              <Color red="1.0" green="0.6499999761581421" blue="1.1102230246251565E-16" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </input>
+               <color>
+                  <Color red="0.3199999928474426" green="0.3199999928474426" blue="0.3199999928474426" opacity="0.45288753509521484" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

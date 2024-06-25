@@ -1,0 +1,22 @@
+/* Define a custom style class for the TableView */
+.table-view-violet {
+    -fx-background-color: violet; /* Set the background color to violet */
+}
+
+/* Define styles for table headers */
+.table-view-violet .column-header {
+    -fx-background-color: #8a2be2; /* Set a darker violet color for column headers */
+    -fx-text-fill: white; /* Set text color for column headers to white */
+    -fx-font-weight: bold; /* Make column headers bold */
+}
+
+/* Define styles for table rows */
+.table-view-violet .table-row-cell {
+    -fx-background-color: lavender; /* Set a lighter violet color for table rows */
+}
+
+/* Define styles for selected rows */
+.table-view-violet .table-row-cell:selected {
+    -fx-background-color: #9400d3; /* Set a darker purple color for selected rows */
+    -fx-text-fill: white; /* Set text color for selected rows to white */
+}

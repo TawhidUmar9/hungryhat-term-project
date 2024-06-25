@@ -1,0 +1,30 @@
+/* TableView Style */
+.table-view {
+    -fx-background-color: #c3e6d7; /* Lighter background color */
+}
+
+/* Table Header Style */
+.table-view .column-header {
+    -fx-background-color: #136f63; /* Header background color */
+    -fx-text-fill: white; /* Header text color */
+}
+
+/* Table Row Hover Style */
+.table-row-cell:hover {
+    -fx-background-color: #a1d2c9; /* Hovered row background color */
+}
+
+/* Table Cell Style */
+.table-cell {
+    -fx-text-fill: #136f63; /* Text color */
+}
+
+/* Table Selection Style */
+.table-row-cell:selected {
+    -fx-background-color: #41b0a6; /* Selected row background color */
+}
+
+/* Table Selection Text Color */
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: white; /* Selected text color */
+}

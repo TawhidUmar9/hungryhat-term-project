@@ -1,0 +1,19 @@
+/* Button Styles */
+.button {
+    -fx-text-fill: #ecf0f1;
+    -fx-font-size: 17px;
+    -fx-background-color: #e67e22;
+    -fx-border-width: 1px;
+    -fx-border-color: #f39c12;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, #d35400, 0, 6, 0, 0);
+    -fx-transition: all 0.1s;
+    -fx-cursor: hand; /* Use "hand" cursor for pointer effect */
+}
+
+/* Button Active Styles */
+.button:pressed {
+    -fx-effect: dropshadow(three-pass-box, #d35400, 0, 2, 0, 0);
+    -fx-translate-y: 2px;
+}

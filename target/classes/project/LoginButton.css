@@ -1,0 +1,51 @@
+/* Button Styles */
+.btn {
+    -fx-background-radius: 0.5em;
+    -fx-font-size: larger;
+    -fx-min-height: 3em;
+    -fx-min-width: 6em;
+    -fx-max-height: 3em;
+    -fx-max-width: 6em;
+    -fx-background-color: rgb(49, 24, 71); /* Initial button color */
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(one-pass-box, rgba(49, 24, 71, 0.53), 1, 2, 0, 0);
+    -fx-transition-duration: 0.2s;
+}
+
+.btn:hover {
+    -fx-background-color: rgb(85, 51, 112); /* Button color on hover */
+}
+
+/* Ripple Effect Styles */
+.ripple-container {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.ripple-container > .ripple {
+    -fx-background-color: rgb(82, 100, 174);
+    -fx-shape: "M13,6 C13,8.20914 11.2091,10 9,10 C6.79086,10 5,8.20914 5,6 C5,3.79086 6.79086,2 9,2 C11.2091,2 13,3.79086 13,6 Z";
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+    -fx-opacity: 0;
+    -fx-background-radius: 999em;
+    -fx-translate-x: -6.5em;
+    -fx-translate-y: -6.5em;
+    -fx-transition-property: scale, opacity;
+    -fx-transition-duration: 0.5s, 1s;
+    -fx-transition-timing-function: ease-out;
+}
+
+.btn:pressed > .ripple {
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-opacity: 1;
+    -fx-transition-duration: 0s;
+}
+
+.btn:disabled {
+    -fx-background-color: rgb(49, 24, 71); /* Button color when disabled */
+    -fx-text-fill: white;
+    -fx-opacity: 0.5;
+    -fx-cursor: default;
+}

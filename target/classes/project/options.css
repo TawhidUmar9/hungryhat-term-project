@@ -1,0 +1,19 @@
+/* Button Styles */
+.button {
+    -fx-background-color: #6c5ce7;
+    -fx-text-fill: #fff;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 0;
+    -fx-outline: none;
+    -fx-cursor: hand; /* Use "hand" cursor for pointer effect */
+    -fx-transition: all 0.1s ease;
+}
+
+/* Button Active State Styles */
+.button:pressed {
+    -fx-translate-y: 5px; /* Apply translateY transformation on button press */
+}

@@ -1,0 +1,31 @@
+/* Table View Styles */
+.table-view {
+    -fx-background-color: #FFA500; /* Orange background color */
+}
+
+/* Table Column Header Styles */
+.table-view .column-header-background {
+    -fx-background-color: #FF8C00; /* Darker shade of orange for column headers */
+    -fx-padding: 5px;
+}
+
+/* Table Cell Styles */
+.table-row-cell {
+    -fx-background-color: transparent; /* Transparent cell background */
+    -fx-text-fill: #000; /* Black text color */
+}
+
+/* Alternate Row Colors (Optional) */
+.table-row-cell:odd {
+    -fx-background-color: #FFA500; /* Orange background for odd rows */
+}
+
+/* Hover and Selection Styles (Optional) */
+.table-row-cell:hover {
+    -fx-background-color: #FFC0CB; /* Light pink background on hover */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #FF6347; /* Tomato red background when selected */
+    -fx-text-fill: white; /* White text color for selected cells */
+}
